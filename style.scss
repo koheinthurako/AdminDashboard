@@ -1,0 +1,25 @@
+$font-family-sans-serif: 'Poppins', sans-serif;
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+}
+
+button {
+    text-align: start !important;
+    transition: 0.2s;
+}
+
+.row button:hover, button.active {
+    color: #fff !important;
+    background-color: #333 !important;
+}

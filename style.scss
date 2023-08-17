@@ -32,3 +32,19 @@ button {
     }
 
 }
+
+@include media-breakpoint-down(lg) {
+    #sidebar {
+      width: 250px;
+      position: fixed;
+      transition: 0.5s;
+      transform: translateX(-300px);
+      &.show {
+        transform: translateX(0px);
+      }
+    }
+
+    #sidebar .btn-group-vertical:first-child {
+        margin-top: 100px;
+    }
+  }

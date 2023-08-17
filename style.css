@@ -11872,4 +11872,11 @@ button {
   background-color: #333 !important;
 }
 
+#sidebar {
+  padding: 190px 15px 50px 15px;
+}
+#sidebar button {
+  font-size: 0.8rem;
+}
+
 /*# sourceMappingURL=style.css.map */

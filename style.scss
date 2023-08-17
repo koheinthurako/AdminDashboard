@@ -33,6 +33,10 @@ button {
 
 }
 
+.pageview.blur {
+    filter: blur(7px);
+}
+
 @include media-breakpoint-down(lg) {
     #sidebar {
       width: 250px;

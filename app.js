@@ -3,6 +3,7 @@ const showSideBar = document.getElementById('showSideBar');
 const userBox = document.getElementById("userBox");
 const userBtn = document.getElementById("userBtn");
 const adminBox = document.getElementById("adminBox");
+const sidebarBtns = document.querySelectorAll("#sidebar button");
 
 showSideBar.addEventListener('click', function() {
   sidebar.classList.toggle('show');
@@ -21,3 +22,13 @@ function showUserBox() {
 }
 
 userBtn.addEventListener('click', showUserBox);
+
+sidebarBtns.forEach(btn => {
+  btn.addEventListener('click', e => {
+    let currentBtn = e.target;
+    if(!currentBtn.classList.contains("active")) {
+      sidebarBtns.forEach(btn => btn.classList.remove("active")); // အထဲမှာ loop ပြန်ပတ် active class remove လုပ်ပြီးမှ 
+      currentBtn.classList.add("active"); // ဒီမှာ active ကို ပြန်ထည့်
+    }
+  })
+})

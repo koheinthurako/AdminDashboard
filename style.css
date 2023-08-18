@@ -11897,9 +11897,14 @@ button {
     margin-top: 100px;
   }
 }
+.card {
+  height: 360px;
+}
+
 .card .card-body img {
   width: 150px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

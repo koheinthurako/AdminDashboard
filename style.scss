@@ -62,3 +62,11 @@ button {
     border-radius: 50%;
     object-fit: cover;
   }
+
+  .box.show {
+    display: block;
+  }
+
+  .box.hide {
+    display: none !important;
+  }

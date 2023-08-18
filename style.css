@@ -11907,4 +11907,12 @@ button {
   object-fit: cover;
 }
 
+.box.show {
+  display: block;
+}
+
+.box.hide {
+  display: none !important;
+}
+
 /*# sourceMappingURL=style.css.map */

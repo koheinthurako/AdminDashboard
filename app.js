@@ -5,13 +5,14 @@ const userBtn = document.getElementById("userBtn");
 const adminBox = document.getElementById("adminBox");
 const sidebarBtns = document.querySelectorAll("#sidebar button");
 const dashboardBtn = document.getElementById("dashboardBtn");
+const mainDashBoard = document.querySelector(".mainDashBoard");
 
 showSideBar.addEventListener('click', function() {
   sidebar.classList.toggle('show');
   if(sidebar.classList.contains("show")) {
-    adminBox.classList.add("blur");
+    mainDashBoard.classList.add("blur");
   } else {
-    adminBox.classList.remove("blur");
+    mainDashBoard.classList.remove("blur");
   }
 });
 

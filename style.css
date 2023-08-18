@@ -11879,7 +11879,7 @@ button {
   font-size: 0.8rem;
 }
 
-.pageview.blur {
+.mainDashBoard.blur {
   filter: blur(7px);
 }
 

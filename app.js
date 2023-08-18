@@ -4,6 +4,7 @@ const userBox = document.getElementById("userBox");
 const userBtn = document.getElementById("userBtn");
 const adminBox = document.getElementById("adminBox");
 const sidebarBtns = document.querySelectorAll("#sidebar button");
+const dashboardBtn = document.getElementById("dashboardBtn");
 
 showSideBar.addEventListener('click', function() {
   sidebar.classList.toggle('show');
@@ -21,7 +22,16 @@ function showUserBox() {
   userBox.classList.replace("hide", "show");
 }
 
+function showDashBox() {
+  if(userBox.classList.contains("show")) {
+    userBox.classList.replace("show", "hide");
+  }
+  adminBox.classList.replace("hide", "show");
+}
+
 userBtn.addEventListener('click', showUserBox);
+dashboardBtn.addEventListener('click', showDashBox);
+
 
 sidebarBtns.forEach(btn => {
   btn.addEventListener('click', e => {

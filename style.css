@@ -11868,8 +11868,8 @@ button {
 }
 
 .row button:hover, button.active {
-  color: #fff !important;
-  background-color: #333 !important;
+  color: #000 !important;
+  background-color: #fff !important;
 }
 
 #sidebar {

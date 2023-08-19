@@ -11867,7 +11867,12 @@ button {
   transition: 0.2s;
 }
 
-.row button:hover, button.active {
+#userBox button:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+#sidebar button:hover, button.active {
   color: #000 !important;
   background-color: #fff !important;
 }
@@ -11903,6 +11908,7 @@ button {
 
 .card .card-body img {
   width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
 }

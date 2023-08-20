@@ -76,3 +76,14 @@ button {
   .box.hide {
     display: none !important;
   }
+
+  .row .infoBox {
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .row .infoBox:hover {
+    color: #fff;
+    background-color: #000 !important;
+    transform: translateY(-5px);
+  }

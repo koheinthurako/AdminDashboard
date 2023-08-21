@@ -11921,7 +11921,7 @@ button {
   display: none !important;
 }
 
-.row .infoBox {
+.row .infoBox, .row .selectBox {
   cursor: pointer;
   transition: 0.2s;
 }

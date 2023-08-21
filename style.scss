@@ -77,7 +77,7 @@ button {
     display: none !important;
   }
 
-  .row .infoBox {
+  .row .infoBox, .row .selectBox {
     cursor: pointer;
     transition: 0.2s;
   }
@@ -87,3 +87,5 @@ button {
     background-color: #000 !important;
     transform: translateY(-5px);
   }
+
+  

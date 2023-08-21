@@ -77,7 +77,7 @@ button {
     display: none !important;
   }
 
-  .row .infoBox, .row .selectBox {
+  .row .infoBox, .row .selectBox, nav #profile {
     cursor: pointer;
     transition: 0.2s;
   }
@@ -87,5 +87,30 @@ button {
     background-color: #000 !important;
     transform: translateY(-5px);
   }
+
+ @media screen and (max-width: 560px) {
+    #empTable img {
+      width: 25px;
+      height: 25px;
+      object-fit: cover;
+    }
+
+    #empTable .name {
+      font-size: 10px;
+    }
+
+    #empTable .role {
+      font-size: 6px;
+    }
+
+    #empTable i, #empTable .checkIn {
+      font-size: 9px;
+    }
+
+    #empTable button {
+      font-size: 6px;
+    }
+ }
+
 
   

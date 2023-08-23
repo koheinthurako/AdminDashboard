@@ -11902,7 +11902,7 @@ button {
     margin-top: 100px;
   }
 }
-.card {
+#userBox .card {
   height: 360px;
 }
 

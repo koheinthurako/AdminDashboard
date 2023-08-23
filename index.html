@@ -99,7 +99,7 @@
                                   </li>
                                 </ul>
                                 <form class="d-flex" role="search">
-                                  <a href="#offcanvas" data-bs-toggle="offcanvas" role="button">
+                                  <a href="#offcanvas" data-bs-toggle="offcanvas" role="button" class="text-dark">
                                     <i class="bi bi-person-lines-fill fs-4 me-3" title="Profile" id="profile"></i>
                                   </a>
                                 </form>
@@ -547,23 +547,45 @@
                         <!-- Offcanvas -->
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas">
                             <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvas">Offcanvas</h5>
+                              <h5 class="offcanvas-title fw-bold" id="offcanvas">Profile</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
-                            <div class="offcanvas-body">
-                              <div>
-                                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                              </div>
-                              <div class="dropdown mt-3">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                  Dropdown button
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                              </div>
+                            <div class="offcanvas-body bg-light">
+                                <div class="card m-3 p-3 border-0 shadow">
+                                    <div class="card-body text-center">
+                                        <div class="imgBox">
+                                            <img src="./imgs/me 1.jpg" alt="" class="">
+                                        </div>
+                                        <div class="contents mt-4">
+                                            <h4 class="fw-bold m-0">Thet Zaw Hein</h4>
+                                            <p class="small opacity-75">Frontend Web Developer</p>
+                                            <p class="my-3 col-11 small mx-auto opacity-75">
+                                                Experienced web developer crafting innovative digital solutions with seamless collaboration for remarkable user experiences.
+                                            </p>
+                                            <div class="profileContact d-flex flex-column gap-1 mb-4">
+                                                <div class="phone d-flex align-items-center gap-2 justify-content-center">
+                                                    <i class="bi bi-telephone-fill"></i>
+                                                    <p class="m-0 small">09341521527</p>
+                                                </div>
+
+                                                <div class="phone d-flex align-items-center gap-2 justify-content-center">
+                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                    <p class="m-0 small">Yangon, Myanmar</p>
+                                                </div>
+
+                                                <div class="phone d-flex align-items-center gap-2 justify-content-center">
+                                                    <i class="bi bi-envelope-at-fill"></i>
+                                                    <p class="m-0 small">thetzawhein***@gmail.com</p>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-4">
+                                            <div class="profileLogBox d-flex flex-column gap-2">
+                                                <button class="btn btn-outline-dark small w-100 text-center">Sign in another account</button>
+                                                <button class="btn btn-dark small w-100 text-center">Log Out</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                           </div>
                     </div>

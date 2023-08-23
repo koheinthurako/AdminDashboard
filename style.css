@@ -11932,7 +11932,7 @@ button {
   transform: translateY(-5px);
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 990px) {
   #empTable img {
     width: 34px;
     height: 34px;
@@ -11949,6 +11949,26 @@ button {
   }
   #empTable button {
     font-size: 6px;
+  }
+  .navbar-nav li {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.3137254902);
+  }
+  .navbar-nav li a:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  #navBar form .profileBox {
+    padding: 9px 0;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.3137254902);
+    cursor: pointer;
+  }
+  #navBar form .profileBox:hover i, #navBar form .profileBox:hover {
+    color: #fff;
+    background-color: #000;
   }
 }
 

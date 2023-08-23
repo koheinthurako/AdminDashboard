@@ -11886,6 +11886,8 @@ button {
 
 .mainDashBoard.blur {
   filter: blur(7px);
+  user-select: none;
+  pointer-events: none;
 }
 
 @media (max-width: 991.98px) {

@@ -40,7 +40,9 @@ button {
 
 .mainDashBoard.blur {
     filter: blur(7px);
-}
+    user-select: none;
+    pointer-events: none;
+  }
 
 @include media-breakpoint-down(lg) {
     #sidebar {

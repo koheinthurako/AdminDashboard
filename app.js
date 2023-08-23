@@ -17,17 +17,21 @@ showSideBar.addEventListener('click', function() {
 });
 
 function showUserBox() {
+  sidebar.classList.remove("show");
+  mainDashBoard.classList.remove("blur");
   if(adminBox.classList.contains("show")) {
     adminBox.classList.replace("show", "hide");
   }
-  userBox.classList.replace("hide", "show");
+    userBox.classList.replace("hide", "show");
 }
 
 function showDashBox() {
+  sidebar.classList.remove("show");
+  mainDashBoard.classList.remove("blur");
   if(userBox.classList.contains("show")) {
     userBox.classList.replace("show", "hide");
   }
-  adminBox.classList.replace("hide", "show");
+    adminBox.classList.replace("hide", "show");
 }
 
 userBtn.addEventListener('click', showUserBox);

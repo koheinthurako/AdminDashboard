@@ -24,7 +24,7 @@
                                 <i class="bi bi-person-circle me-2"></i>
                                 Users
                             </button>
-                            <button type="button" class="btn text-white rounded-2 shadow-sm btn-sm p-2 fw-bold">
+                            <button type="button" class="btn text-white rounded-2 shadow-sm btn-sm p-2 fw-bold" id="statisticsBtn">
                                 <i class="bi bi-bar-chart-fill me-2"></i>
                                 Statistics
                             </button>
@@ -103,7 +103,7 @@
 
                         <div class="mainDashBoard">
                             <!-- For Dashboard -->
-                            <div class="p-4 p-lg-5 bg-light box hide" id="adminBox">
+                            <div class="p-4 p-lg-5 bg-light box show" id="adminBox">
                                 <div class="row justify-content-center justify-content-lg-start gap-4 gap-lg-0 mb-5">
                                     <div class="title d-flex align-items-center flex-column flex-lg-row text-center text-lg-start gap-3 mb-4 mb-lg-5">
                                         <img class="rounded-circle" src="./imgs/me 1.jpg" width="70px" height="70px" alt="">
@@ -539,7 +539,7 @@
                             </div>
 
                             <!-- For Statistics -->
-                            <div class="p-5 d-flex flex-column gap-4" id="statistics">
+                            <div class="p-5 d-flex flex-column bg-light gap-4 box hide" id="statisticsBox">
                                 <div class="row justify-content-around gap-4 gap-lg-0">
                                     <div class="progressCard col-12 col-lg-6 bg-white shadow p-4 rounded-4">
                                         <div class="d-flex justify-content-between align-items-center">
@@ -549,8 +549,17 @@
                                                 <i class="bi bi-caret-right-fill"></i>
                                             </div>
                                         </div>
-                                        <p class="mt-5 small opacity-75">Your completed work, activity levels and progress.</p>
-                                        <div class="progress my-5" role="progressbar">
+                                        <p class="mt-4 small opacity-75">Your completed work, activity levels and progress.</p>
+                                        <p class="mb-2 small">Company Jobs</p>
+                                        <div class="progress mb-3" role="progressbar">
+                                            <div class="progress-bar bg-success w-50"></div>
+                                        </div>
+                                        <p class="mb-2 small">Freelance</p>
+                                        <div class="progress mb-3" role="progressbar">
+                                            <div class="progress-bar bg-success w-25"></div>
+                                        </div>
+                                        <p class="mb-2 small">Remote</p>
+                                        <div class="progress mb-5" role="progressbar">
                                             <div class="progress-bar bg-success w-75"></div>
                                         </div>
                                         <h5 class="m-0 text-success">75% completed</h5>

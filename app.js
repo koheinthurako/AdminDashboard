@@ -4,8 +4,10 @@ const userBox = document.getElementById("userBox");
 const userBtn = document.getElementById("userBtn");
 const adminBox = document.getElementById("adminBox");
 const sidebarBtns = document.querySelectorAll("#sidebar button");
-const dashboardBtn = document.getElementById("dashboardBtn");
 const mainDashBoard = document.querySelector(".mainDashBoard");
+const dashboardBtn = document.getElementById("dashboardBtn");
+const statisticsBox = document.getElementById("statisticsBox");
+const statistics = document.getElementById("statisticsBtn");
 
 showSideBar.addEventListener('click', function() {
   sidebar.classList.toggle('show');
@@ -16,26 +18,41 @@ showSideBar.addEventListener('click', function() {
   }
 });
 
-function showUserBox() {
+function clearBlurEffect() {
   sidebar.classList.remove("show");
   mainDashBoard.classList.remove("blur");
-  if(adminBox.classList.contains("show")) {
+}
+
+function showUserBox() {
+  clearBlurEffect();
+  if(adminBox.classList.contains("show") || statisticsBox.classList.contains("show")) {
     adminBox.classList.replace("show", "hide");
+    statisticsBox.classList.replace("show", "hide");
   }
     userBox.classList.replace("hide", "show");
 }
 
 function showDashBox() {
-  sidebar.classList.remove("show");
-  mainDashBoard.classList.remove("blur");
-  if(userBox.classList.contains("show")) {
+  clearBlurEffect();
+  if(userBox.classList.contains("show") || statisticsBox.classList.contains("show")) {
     userBox.classList.replace("show", "hide");
+    statisticsBox.classList.replace("show", "hide");
   }
     adminBox.classList.replace("hide", "show");
 }
 
+function showStatistics() {
+  clearBlurEffect();
+  if(userBox.classList.contains("show") || adminBox.classList.contains("show")) {
+    userBox.classList.replace("show", "hide");
+    adminBox.classList.replace("show", "hide");
+  }
+    statisticsBox.classList.replace("hide", "show");
+}
+
 userBtn.addEventListener('click', showUserBox);
 dashboardBtn.addEventListener('click', showDashBox);
+statistics.addEventListener('click', showStatistics)
 
 
 sidebarBtns.forEach(btn => {

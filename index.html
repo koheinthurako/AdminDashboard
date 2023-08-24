@@ -22,7 +22,7 @@
                             </button>
                             <button type="button" class="btn text-white rounded-2 shadow-sm btn-sm p-2 fw-bold" id="userBtn">
                                 <i class="bi bi-person-circle me-2"></i>
-                                User
+                                Users
                             </button>
                             <button type="button" class="btn text-white rounded-2 shadow-sm btn-sm p-2 fw-bold">
                                 <i class="bi bi-bar-chart-fill me-2"></i>
@@ -101,9 +101,9 @@
                             </div>
                         </nav>
 
-                        <!-- For Dashboard -->
                         <div class="mainDashBoard">
-                            <div class="p-4 p-lg-5 bg-light box show" id="adminBox">
+                            <!-- For Dashboard -->
+                            <div class="p-4 p-lg-5 bg-light box hide" id="adminBox">
                                 <div class="row justify-content-center justify-content-lg-start gap-4 gap-lg-0 mb-5">
                                     <div class="title d-flex align-items-center flex-column flex-lg-row text-center text-lg-start gap-3 mb-4 mb-lg-5">
                                         <img class="rounded-circle" src="./imgs/me 1.jpg" width="70px" height="70px" alt="">
@@ -457,7 +457,8 @@
                                     
                                 </div>
                             </div>
-    
+
+                            <!-- For Users -->
                             <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap p-5 bg-light box hide" id="userBox">
                                 <div class="card border-0 shadow">
                                     <div class="card-body d-flex flex-column text-center m-3">
@@ -533,6 +534,27 @@
                                             <p class="small">Network Engineer</p>
                                         </div>
                                         <button class="btn btn-outline-dark mt-auto text-center">Contact</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- For Statistics -->
+                            <div class="">
+                                <div class="row p-5">
+                                    <div class="col-5 bg-white shadow p-4 rounded-4">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="m-0 fw-bold">Job Progress</h4>
+                                            <div class="d-flex align-items-center gap-1 text-success" id="report">
+                                                <p class="m-0 small">Report</p>
+                                                <i class="bi bi-caret-right-fill"></i>
+                                            </div>
+                                        </div>
+                                        <p class="mt-5 small opacity-75">Your completed work, activity levels and progress.</p>
+                                        <div class="progress my-4" role="progressbar">
+                                            <div class="progress-bar w-75"></div>
+                                        </div>
+                                        <h5 class="m-0 text-success">75% completed</h5>
+                                        <span class="opacity-75" style="font-size: 12px;">Deadline 30 Dec, 2023</span>
                                     </div>
                                 </div>
                             </div>

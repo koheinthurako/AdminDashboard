@@ -4861,12 +4861,12 @@ textarea.form-control-lg {
 
 @keyframes progress-bar-stripes {
   0% {
-    background-position-x: 1rem;
+    background-position-x: 7px;
   }
 }
 .progress,
 .progress-stacked {
-  --bs-progress-height: 1rem;
+  --bs-progress-height: 7px;
   --bs-progress-font-size: 0.75rem;
   --bs-progress-bg: var(--bs-secondary-bg);
   --bs-progress-border-radius: var(--bs-border-radius);
@@ -11932,6 +11932,15 @@ button {
   color: #fff;
   background-color: #000 !important;
   transform: translateY(-5px);
+}
+
+#report {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#report:hover {
+  transform: translateX(3px);
 }
 
 @media screen and (max-width: 990px) {

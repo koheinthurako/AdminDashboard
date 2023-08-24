@@ -8,6 +8,7 @@ const mainDashBoard = document.querySelector(".mainDashBoard");
 const dashboardBtn = document.getElementById("dashboardBtn");
 const statisticsBox = document.getElementById("statisticsBox");
 const statistics = document.getElementById("statisticsBtn");
+const homeBtn = document.getElementById("homeBtn");
 
 showSideBar.addEventListener('click', function() {
   sidebar.classList.toggle('show');
@@ -53,6 +54,11 @@ function showStatistics() {
 userBtn.addEventListener('click', showUserBox);
 dashboardBtn.addEventListener('click', showDashBox);
 statistics.addEventListener('click', showStatistics)
+homeBtn.addEventListener('click', _ => {
+  showDashBox();
+  sidebarBtns.forEach(btn => btn.classList.remove("active"));
+  sidebarBtns[0].classList.add("active");
+});
 
 
 sidebarBtns.forEach(btn => {

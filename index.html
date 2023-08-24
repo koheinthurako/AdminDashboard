@@ -539,9 +539,9 @@
                             </div>
 
                             <!-- For Statistics -->
-                            <div class="">
-                                <div class="row p-5">
-                                    <div class="col-5 bg-white shadow p-4 rounded-4">
+                            <div class="p-5 d-flex flex-column gap-5" id="statistics">
+                                <div class="row justify-content-around">
+                                    <div class="progressCard col-6 bg-white shadow p-4 rounded-4">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h4 class="m-0 fw-bold">Job Progress</h4>
                                             <div class="d-flex align-items-center gap-1 text-success" id="report">
@@ -550,8 +550,41 @@
                                             </div>
                                         </div>
                                         <p class="mt-5 small opacity-75">Your completed work, activity levels and progress.</p>
-                                        <div class="progress my-4" role="progressbar">
-                                            <div class="progress-bar w-75"></div>
+                                        <div class="progress my-5" role="progressbar">
+                                            <div class="progress-bar bg-success w-75"></div>
+                                        </div>
+                                        <h5 class="m-0 text-success">75% completed</h5>
+                                        <span class="opacity-75" style="font-size: 12px;">Deadline 30 Dec, 2023</span>
+                                    </div>
+
+                                    <div class="progressCard col-5 bg-white shadow p-4 rounded-4">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="m-0 fw-bold">Earning</h4>
+                                            <div class="d-flex align-items-center gap-1 text-success" id="report">
+                                                <p class="m-0 small">Report</p>
+                                                <i class="bi bi-caret-right-fill"></i>
+                                            </div>
+                                        </div>
+                                        <h2 class="mt-4 mb-0 fw-bold">$176,053</h2>
+                                        <span class="opacity-75" style="font-size: 12px;">Road to $500,000</span>
+                                        <div class="col-12 mt-3">
+                                            <canvas id="barChart" width="400" height="100"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row p-4">
+                                    <div class="progressCard col-12 bg-white shadow p-4 rounded-4">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="m-0 fw-bold">Job Progress</h4>
+                                            <div class="d-flex align-items-center gap-1 text-success" id="report">
+                                                <p class="m-0 small">Report</p>
+                                                <i class="bi bi-caret-right-fill"></i>
+                                            </div>
+                                        </div>
+                                        <p class="mt-5 small opacity-75">Your completed work, activity levels and progress.</p>
+                                        <div class="progress my-5" role="progressbar">
+                                            <div class="progress-bar bg-success w-75"></div>
                                         </div>
                                         <h5 class="m-0 text-success">75% completed</h5>
                                         <span class="opacity-75" style="font-size: 12px;">Deadline 30 Dec, 2023</span>
@@ -613,7 +646,33 @@
     </main>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
     <script src="./app.js"></script>
+
+    <script>
+
+        const barChart = document.getElementById("barChart");
+
+        new Chart(barChart, {
+        type: 'bar',
+        data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+            datasets: [{
+                label: 'Monthly incomes',
+                data: [20192, 10340, 49100, 24002, 30400, 42019],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+            y: {
+                beginAtZero: true
+            }
+            }
+        }
+        });
+
+    </script>
     
 </body>
 </html>

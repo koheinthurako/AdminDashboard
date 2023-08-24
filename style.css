@@ -4861,12 +4861,12 @@ textarea.form-control-lg {
 
 @keyframes progress-bar-stripes {
   0% {
-    background-position-x: 7px;
+    background-position-x: 10px;
   }
 }
 .progress,
 .progress-stacked {
-  --bs-progress-height: 7px;
+  --bs-progress-height: 10px;
   --bs-progress-font-size: 0.75rem;
   --bs-progress-bg: var(--bs-secondary-bg);
   --bs-progress-border-radius: var(--bs-border-radius);
@@ -11923,17 +11923,6 @@ button {
   display: none !important;
 }
 
-.row .infoBox, .row .selectBox, nav #profile {
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.row .infoBox:hover {
-  color: #fff;
-  background-color: #000 !important;
-  transform: translateY(-5px);
-}
-
 #report {
   cursor: pointer;
   transition: 0.2s;
@@ -11941,6 +11930,26 @@ button {
 
 #report:hover {
   transform: translateX(3px);
+}
+
+#statistics .progressCard {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#statistics .progressCard:hover {
+  transform: translateY(-5px);
+}
+
+.row .infoBox, .row .selectBox, nav #profile {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.row .infoBox:hover {
+  color: #fff;
+  background-color: #1e1e1e !important;
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 990px) {

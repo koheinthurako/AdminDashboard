@@ -11965,6 +11965,11 @@ button {
   font-size: 12px;
 }
 
+@media screen and (max-width: 1120px) {
+  #aboutCard p {
+    font-size: 9px;
+  }
+}
 @media screen and (max-width: 990px) {
   #empTable img {
     width: 34px;
@@ -12016,6 +12021,9 @@ button {
   }
   #sidebar .btn-group-vertical:first-child {
     margin-top: 0;
+  }
+  #aboutCard p {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 540px) {

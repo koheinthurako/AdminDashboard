@@ -12018,5 +12018,13 @@ button {
     margin-top: 0;
   }
 }
+@media screen and (max-width: 540px) {
+  #aboutCard h5, #aboutCard .h5 {
+    font-size: 1rem;
+  }
+  #aboutCard p {
+    font-size: 7px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

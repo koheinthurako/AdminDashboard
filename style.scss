@@ -56,10 +56,6 @@ button {
         transform: translateX(0px);
       }
     }
-
-    // #sidebar .btn-group-vertical:first-child {
-    //     margin-top: 100px;
-    // }
   }
 
   #userBox .card {
@@ -90,18 +86,16 @@ button {
     transform: translateX(3px);
   }
 
-  #statisticsBox .progressCard {
+
+  
+  .row .infoBox, .row .selectBox, nav #profile, nav a,
+  #statisticsBox .progressCard, #userBox .card {
     cursor: pointer;
     transition: 0.2s;
   }
-
-  #statisticsBox .progressCard:hover {
+  
+  #statisticsBox .progressCard:hover, #userBox .card:hover {
     transform: translateY(-5px);
-  }
-
-  .row .infoBox, .row .selectBox, nav #profile {
-    cursor: pointer;
-    transition: 0.2s;
   }
 
   .row .infoBox:hover {

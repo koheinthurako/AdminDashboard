@@ -57,9 +57,9 @@ button {
       }
     }
 
-    #sidebar .btn-group-vertical:first-child {
-        margin-top: 100px;
-    }
+    // #sidebar .btn-group-vertical:first-child {
+    //     margin-top: 100px;
+    // }
   }
 
   #userBox .card {
@@ -180,4 +180,19 @@ button {
     .offcanvas .bgImg {
       background-image: url("./imgs/BG-1.jpg");
     }
+
+    #sidebar .btn-group-vertical:first-child {
+      margin-top: 100px;
+    }
+
+ }
+
+ @media screen and (max-width: 912px) {
+  #sidebar {
+    padding: 75px 15px 50px 15px;
+  }
+
+  #sidebar .btn-group-vertical:first-child {
+    margin-top: 0;
+  }
  }

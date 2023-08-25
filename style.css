@@ -11952,6 +11952,22 @@ button {
   transform: translateY(-5px);
 }
 
+.offcanvas .bgImg {
+  background-image: url("./imgs/BG-2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
+
+#aboutCard {
+  background: rgba(100, 100, 100, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 @media screen and (max-width: 990px) {
   #empTable img {
     width: 34px;
@@ -11989,6 +12005,9 @@ button {
   #navBar form .profileBox:hover i, #navBar form .profileBox:hover {
     color: #fff;
     background-color: #000;
+  }
+  .offcanvas .bgImg {
+    background-image: url("./imgs/BG-1.jpg");
   }
 }
 

@@ -86,11 +86,11 @@
                                     <a class="nav-link" aria-current="page" href="#" id="homeBtn">Home</a>
                                   </li>
                                   <li class="nav-item text-center rounded-3">
-                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" data-bs-toggle="offcanvas" href="#aboutOffcanvas">About</a>
                                   </li>
                                 </ul>
                                 <form class="my-3 my-lg-0" role="search">
-                                    <div class="profileBox d-flex justify-content-center align-items-center" data-bs-toggle="offcanvas" href="#offcanvas">
+                                    <div class="profileBox d-flex justify-content-center align-items-center" data-bs-toggle="offcanvas" href="#profileOffcanvas">
                                         <a role="button" class="text-dark">
                                             <i class="bi bi-person-lines-fill fs-4 me-3" title="Profile" id="profile"></i>
                                         </a>
@@ -602,7 +602,7 @@
                         </div>
 
                         <!-- Offcanvas -->
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas">
+                        <div class="offcanvas offcanvas-end" id="profileOffcanvas">
                             <div class="offcanvas-header">
                               <h5 class="offcanvas-title fw-bold" id="offcanvas">Profile</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -646,7 +646,33 @@
                                     </div>
                                 </div>
                             </div>
-                          </div>
+                        </div>
+
+                        <div class="offcanvas offcanvas-top min-vh-100" id="aboutOffcanvas">
+                            <div class="offcanvas-header bg-dark text-bg-dark">
+                              <h5 class="offcanvas-title fw-bold" id="offcanvas">About</h5>
+                              <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body p-0">
+                                <div class="bgImg">
+                                    <div class="row justify-content-center align-items-center pt-5">
+                                        <div id="aboutCard" class="d-flex flex-column flex-lg-row col-10">
+                                            <div class="col-10 col-lg-4 rounded-4 p-4">
+                                                <img src="./imgs/me 1.jpg" alt="" class="w-100 rounded-4">
+                                            </div>
+                                            <div class="col-10 col-lg-6 rounded-4 p-4 text-white">
+                                                <h1 class="fw-bold">Thet Zaw Hein</h1>
+                                                <h5 class="opacity-75">Frontend Web Developer</h5>
+                                                <p class="my-4 lh-lg">
+                                                    ဒီ Admin Dashboard လေးကတော့ ကျတော် အစမ်းရေးထားတာဖြစ်ပါတယ်
+                                                    ပေါ့ပေါ့ပါးပါးနဲ့ သပ်သပ်ရပ်ရပ်ဖြစ်အောင် color 3 မျိုးကိုပဲ အသုံးပြုထားပါတယ်
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

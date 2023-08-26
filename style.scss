@@ -2,6 +2,8 @@ $font-family-sans-serif: 'Poppins', sans-serif;
 
 $progress-height: 10px;
 
+$table-cell-padding-y: 1rem;
+
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 @import "./node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
@@ -77,7 +79,7 @@ button {
     display: none !important;
   }
 
-  #report {
+  #report, #invoiceBox .invoiceCard {
     cursor: pointer;
     transition: 0.2s;
   }
@@ -86,15 +88,13 @@ button {
     transform: translateX(3px);
   }
 
-
-  
   .row .infoBox, .row .selectBox, nav #profile, nav a,
   #statisticsBox .progressCard, #userBox .card {
     cursor: pointer;
     transition: 0.2s;
   }
   
-  #statisticsBox .progressCard:hover, #userBox .card:hover {
+  #statisticsBox .progressCard:hover, #userBox .card:hover, #invoiceBox .invoiceCard:hover {
     transform: translateY(-5px);
   }
 

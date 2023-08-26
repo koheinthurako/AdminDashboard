@@ -414,8 +414,8 @@ table {
 }
 
 caption {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: var(--bs-secondary-color);
   text-align: left;
 }
@@ -1867,7 +1867,7 @@ progress {
   border-color: var(--bs-table-border-color);
 }
 .table > :not(caption) > * > * {
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 0.5rem;
   color: var(--bs-table-color-state, var(--bs-table-color-type, var(--bs-table-color)));
   background-color: var(--bs-table-bg);
   border-bottom-width: var(--bs-border-width);
@@ -11920,7 +11920,7 @@ button {
   display: none !important;
 }
 
-#report {
+#report, #invoiceBox .invoiceCard {
   cursor: pointer;
   transition: 0.2s;
 }
@@ -11935,7 +11935,7 @@ button {
   transition: 0.2s;
 }
 
-#statisticsBox .progressCard:hover, #userBox .card:hover {
+#statisticsBox .progressCard:hover, #userBox .card:hover, #invoiceBox .invoiceCard:hover {
   transform: translateY(-5px);
 }
 

@@ -12018,6 +12018,9 @@ table tr td:last-child i {
   #sidebar .btn-group-vertical:first-child {
     margin-top: 100px;
   }
+  #invoiceBox .searchBox {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 912px) {
   #sidebar {
@@ -12036,6 +12039,9 @@ table tr td:last-child i {
   }
   #aboutCard p {
     font-size: 7px;
+  }
+  #invoiceBox table {
+    font-size: 10px;
   }
 }
 

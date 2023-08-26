@@ -3,6 +3,13 @@ $font-family-sans-serif: 'Poppins', sans-serif;
 $progress-height: 10px;
 
 $table-cell-padding-y: 1rem;
+$pagination-padding-x-sm: 1rem;
+$pagination-active-bg: #212529;
+$pagination-border-color: none;
+$pagination-color:#212529;
+$pagination-active-color:#fff;
+$pagination-hover-bg:#212529;
+$pagination-hover-color:#fff;
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 @import "./node_modules/bootstrap-icons/font/bootstrap-icons.css";

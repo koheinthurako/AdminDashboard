@@ -9,6 +9,9 @@ const dashboardBtn = document.getElementById("dashboardBtn");
 const statisticsBox = document.getElementById("statisticsBox");
 const statistics = document.getElementById("statisticsBtn");
 const homeBtn = document.getElementById("homeBtn");
+const invoiceBox = document.getElementById("invoiceBox");
+const invoiceBtn = document.getElementById("invoiceBtn");
+
 
 showSideBar.addEventListener('click', function() {
   sidebar.classList.toggle('show');
@@ -26,34 +29,48 @@ function clearBlurEffect() {
 
 function showUserBox() {
   clearBlurEffect();
-  if(adminBox.classList.contains("show") || statisticsBox.classList.contains("show")) {
+  if(adminBox.classList.contains("show") || statisticsBox.classList.contains("show") || invoiceBox.classList.contains("show")) {
     adminBox.classList.replace("show", "hide");
     statisticsBox.classList.replace("show", "hide");
+    invoiceBox.classList.replace("show", "hide");
   }
     userBox.classList.replace("hide", "show");
 }
 
 function showDashBox() {
   clearBlurEffect();
-  if(userBox.classList.contains("show") || statisticsBox.classList.contains("show")) {
+  if(userBox.classList.contains("show") || statisticsBox.classList.contains("show") || invoiceBox.classList.contains("show")) {
     userBox.classList.replace("show", "hide");
     statisticsBox.classList.replace("show", "hide");
+    invoiceBox.classList.replace("show", "hide");
   }
     adminBox.classList.replace("hide", "show");
 }
 
-function showStatistics() {
+function showStatisticsBox() {
   clearBlurEffect();
-  if(userBox.classList.contains("show") || adminBox.classList.contains("show")) {
+  if(userBox.classList.contains("show") || adminBox.classList.contains("show" || invoiceBox.classList.contains("show"))) {
     userBox.classList.replace("show", "hide");
     adminBox.classList.replace("show", "hide");
+    invoiceBox.classList.replace("show", "hide");
   }
     statisticsBox.classList.replace("hide", "show");
 }
 
+function showInvoiceBox() {
+  clearBlurEffect();
+  if(userBox.classList.contains("show") || adminBox.classList.contains("show") || statisticsBox.classList.contains("show")) {
+    userBox.classList.replace("show", "hide");
+    adminBox.classList.replace("show", "hide");
+    statisticsBox.classList.replace("show", "hide");
+  }
+    invoiceBox.classList.replace("hide", "show");
+}
+
 userBtn.addEventListener('click', showUserBox);
 dashboardBtn.addEventListener('click', showDashBox);
-statistics.addEventListener('click', showStatistics)
+statistics.addEventListener('click', showStatisticsBox);
+invoiceBtn.addEventListener('click', showInvoiceBox)
 homeBtn.addEventListener('click', _ => {
   showDashBox();
   sidebarBtns.forEach(btn => btn.classList.remove("active"));

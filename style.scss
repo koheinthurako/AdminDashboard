@@ -131,6 +131,10 @@ button {
     font-size: 12px;
   }
 
+  table tr td:last-child i{
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 1120px) {
     #aboutCard p {
       font-size: 9px;

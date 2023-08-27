@@ -11969,6 +11969,14 @@ table tr td:last-child i {
   cursor: pointer;
 }
 
+.invoicePage.show {
+  display: contents;
+}
+
+.invoicePage.hide {
+  display: none;
+}
+
 @media screen and (max-width: 1120px) {
   #aboutCard p {
     font-size: 9px;
@@ -12015,8 +12023,11 @@ table tr td:last-child i {
   .offcanvas .bgImg {
     background-image: url("./imgs/BG-1.jpg");
   }
+  #sidebar {
+    padding: 75px 15px 50px 15px;
+  }
   #sidebar .btn-group-vertical:first-child {
-    margin-top: 100px;
+    margin-top: 0;
   }
   #invoiceBox .searchBox {
     width: 100%;

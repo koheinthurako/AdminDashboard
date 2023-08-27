@@ -11,6 +11,8 @@ const statistics = document.getElementById("statisticsBtn");
 const homeBtn = document.getElementById("homeBtn");
 const invoiceBox = document.getElementById("invoiceBox");
 const invoiceBtn = document.getElementById("invoiceBtn");
+const invoicePage = document.querySelectorAll(".invoicePage");
+const invoicePageBtn = document.querySelectorAll(".pagination a");
 
 
 showSideBar.addEventListener('click', function() {
@@ -70,7 +72,23 @@ function showInvoiceBox() {
 userBtn.addEventListener('click', showUserBox);
 dashboardBtn.addEventListener('click', showDashBox);
 statistics.addEventListener('click', showStatisticsBox);
-invoiceBtn.addEventListener('click', showInvoiceBox)
+invoiceBtn.addEventListener('click', showInvoiceBox);
+invoicePageBtn.forEach(btn => {
+  btn.addEventListener('click', e => {
+    const current = parseInt(e.target.innerText);
+    console.log(typeof current);
+    invoicePage.forEach(page => {
+      if(current === parseInt(page.id)){
+        invoicePage.forEach(eachPage => {
+          if(eachPage.classList.contains("show")) {
+            eachPage.classList.replace("show", "hide");
+          };
+        });
+        page.classList.replace("hide", "show");
+      }
+    });
+  })
+});
 homeBtn.addEventListener('click', _ => {
   showDashBox();
   sidebarBtns.forEach(btn => btn.classList.remove("active"));

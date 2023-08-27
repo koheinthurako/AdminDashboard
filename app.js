@@ -12,7 +12,7 @@ const homeBtn = document.getElementById("homeBtn");
 const invoiceBox = document.getElementById("invoiceBox");
 const invoiceBtn = document.getElementById("invoiceBtn");
 const invoicePage = document.querySelectorAll(".invoicePage");
-const invoicePageBtn = document.querySelectorAll(".pagination a");
+const invoicePageBtn = document.querySelectorAll(".pagination li");
 
 
 showSideBar.addEventListener('click', function() {
@@ -51,7 +51,7 @@ function showDashBox() {
 
 function showStatisticsBox() {
   clearBlurEffect();
-  if(userBox.classList.contains("show") || adminBox.classList.contains("show" || invoiceBox.classList.contains("show"))) {
+  if(userBox.classList.contains("show") || adminBox.classList.contains("show") || invoiceBox.classList.contains("show")) {
     userBox.classList.replace("show", "hide");
     adminBox.classList.replace("show", "hide");
     invoiceBox.classList.replace("show", "hide");
@@ -73,12 +73,19 @@ userBtn.addEventListener('click', showUserBox);
 dashboardBtn.addEventListener('click', showDashBox);
 statistics.addEventListener('click', showStatisticsBox);
 invoiceBtn.addEventListener('click', showInvoiceBox);
+
+// pagination display အတွက် Page JS
 invoicePageBtn.forEach(btn => {
   btn.addEventListener('click', e => {
-    const current = parseInt(e.target.innerText);
-    console.log(typeof current);
+    const current = e.target;
     invoicePage.forEach(page => {
-      if(current === parseInt(page.id)){
+      if(parseInt(current.innerHTML) === parseInt(page.id)){
+        invoicePageBtn.forEach(btn => {
+          if(btn.classList.contains("active")) {
+            btn.classList.remove("active");
+            current.parentElement.classList.add("active");
+          };
+        })
         invoicePage.forEach(eachPage => {
           if(eachPage.classList.contains("show")) {
             eachPage.classList.replace("show", "hide");

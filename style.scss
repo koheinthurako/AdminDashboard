@@ -96,7 +96,7 @@ button {
   }
 
   .row .infoBox, .row .selectBox, nav #profile, nav a,
-  #statisticsBox .progressCard, #userBox .card {
+  #statisticsBox .progressCard, #userBox .card, nav span i {
     cursor: pointer;
     transition: 0.2s;
   }
@@ -142,6 +142,13 @@ button {
   .invoicePage.hide {
     display: none;
   }
+
+  .darkmode {
+    color: #fff;
+    background-color: #212529 !important;
+  }
+
+  
 
   @media screen and (max-width: 1120px) {
     #aboutCard p {

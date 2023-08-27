@@ -13,6 +13,8 @@ const invoiceBox = document.getElementById("invoiceBox");
 const invoiceBtn = document.getElementById("invoiceBtn");
 const invoicePage = document.querySelectorAll(".invoicePage");
 const invoicePageBtn = document.querySelectorAll(".pagination li");
+const darkmodeBtn = document.getElementById("darkmodeBtn");
+const firstColBox = document.querySelectorAll(".firstColBox");
 
 
 showSideBar.addEventListener('click', function() {
@@ -69,6 +71,13 @@ function showInvoiceBox() {
     invoiceBox.classList.replace("hide", "show");
 }
 
+function changeDarkMode() {
+  adminBox.classList.add("darkmode");
+  firstColBox.forEach(box => {
+    box.classList.replace("bg-white", "bg-black");
+  });
+}
+
 userBtn.addEventListener('click', showUserBox);
 dashboardBtn.addEventListener('click', showDashBox);
 statistics.addEventListener('click', showStatisticsBox);
@@ -96,11 +105,14 @@ invoicePageBtn.forEach(btn => {
     });
   })
 });
+
 homeBtn.addEventListener('click', _ => {
   showDashBox();
   sidebarBtns.forEach(btn => btn.classList.remove("active"));
   sidebarBtns[0].classList.add("active");
 });
+
+darkmodeBtn.addEventListener('click', changeDarkMode);
 
 
 sidebarBtns.forEach(btn => {

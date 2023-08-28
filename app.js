@@ -14,7 +14,9 @@ const invoiceBtn = document.getElementById("invoiceBtn");
 const invoicePage = document.querySelectorAll(".invoicePage");
 const invoicePageBtn = document.querySelectorAll(".pagination li");
 const darkmodeBtn = document.getElementById("darkmodeBtn");
+const lightmodeBtn = document.getElementById("lightmodeBtn");
 const firstColBox = document.querySelectorAll(".firstColBox");
+const userBoxBtns = userBox.querySelectorAll("button");
 
 
 showSideBar.addEventListener('click', function() {
@@ -73,9 +75,38 @@ function showInvoiceBox() {
 
 function changeDarkMode() {
   adminBox.classList.add("darkmode");
+  userBox.classList.add("darkmode");
+  statisticsBox.classList.add("darkmode");
+  invoiceBox.classList.add("darkmode");
   firstColBox.forEach(box => {
     box.classList.replace("bg-white", "bg-black");
+    box.classList.add("text-white");
+    box.classList.replace("table-light", "table-dark");
+    box.classList.add("table-dark");
   });
+  userBoxBtns.forEach(btn => {
+    btn.classList.replace("btn-outline-dark", "btn-light");
+  });
+  darkmodeBtn.classList.add("d-none");
+  lightmodeBtn.classList.replace("d-none", "d-block");
+}
+
+function changeLightMode() {
+  adminBox.classList.remove("darkmode");
+  userBox.classList.remove("darkmode");
+  statisticsBox.classList.remove("darkmode");
+  invoiceBox.classList.remove("darkmode");
+  firstColBox.forEach(box => {
+    box.classList.replace("bg-black", "bg-white");
+    box.classList.remove("text-white");
+    box.classList.replace("table-dark", "table-light");
+    box.classList.remove("table-dark");
+  });
+  userBoxBtns.forEach(btn => {
+    btn.classList.replace("btn-light", "btn-outline-dark");
+  });
+  darkmodeBtn.classList.remove("d-none");
+  lightmodeBtn.classList.replace("d-block", "d-none");
 }
 
 userBtn.addEventListener('click', showUserBox);
@@ -113,7 +144,7 @@ homeBtn.addEventListener('click', _ => {
 });
 
 darkmodeBtn.addEventListener('click', changeDarkMode);
-
+lightmodeBtn.addEventListener('click', changeLightMode);
 
 sidebarBtns.forEach(btn => {
   btn.addEventListener('click', e => {

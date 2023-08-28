@@ -11930,7 +11930,7 @@ button {
 }
 
 .row .infoBox, .row .selectBox, nav #profile, nav a,
-#statisticsBox .progressCard, #userBox .card, #darkmodeBtn {
+#statisticsBox .progressCard, #userBox .card, #darkmodeBtn, #lightmodeBtn {
   cursor: pointer;
   transition: 0.2s;
 }

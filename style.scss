@@ -191,14 +191,14 @@ button {
       background-color: #000;
     }
 
-    #navBar form .profileBox{
+    #navBar .profileBox{
       padding: 9px 0;
       border-radius: 12px;
       border: 1px solid #00000050;
       cursor: pointer;
     }
 
-    #navBar form .profileBox:hover i, #navBar form .profileBox:hover{
+    #navBar form .profileBox:hover i, #navBar .profileBox:hover{
       color: #fff;
       background-color: #000;
     }

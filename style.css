@@ -12015,13 +12015,13 @@ table tr td:last-child i {
     color: #fff;
     background-color: #000;
   }
-  #navBar form .profileBox {
+  #navBar .profileBox {
     padding: 9px 0;
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.3137254902);
     cursor: pointer;
   }
-  #navBar form .profileBox:hover i, #navBar form .profileBox:hover {
+  #navBar form .profileBox:hover i, #navBar .profileBox:hover {
     color: #fff;
     background-color: #000;
   }

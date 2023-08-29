@@ -74,40 +74,34 @@
                     <div class="vh-100 overflow-scroll bg-white">
                         <nav class="navbar navbar-expand-lg shadow-sm z-1">
                             <div class="container-fluid">
-                              <button class="btn btn-dark d-block d-lg-none" id="showSideBar">
-                                <i class="bi bi-menu-app"></i>
-                              </button>
-                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                              </button>
-                              <div class="collapse navbar-collapse" id="navBar">
-                                <ul class="navbar-nav align-items-center gap-3 me-auto my-3 my-lg-0">
-                                  <li class="nav-item text-center rounded-3">
-                                    <a class="nav-link" aria-current="page" id="homeBtn">Home</a>
-                                  </li>
-                                  <li class="nav-item text-center rounded-3">
-                                    <a class="nav-link" data-bs-toggle="offcanvas" href="#aboutOffcanvas">About</a>
-                                  </li>
-                                </ul>
-                                <form class="my-3 my-lg-0" role="search">
-                                    <div class="d-flex flex-column flex-lg-row align-items-center gap-3 gap-lg-5">
-                                        <div class="d-flex align-items-center justify-content-center gap-2 w-100 profileBox"  id="darkmodeBtn">
-                                            <i class="bi bi-moon-fill" title="darkmode"></i>
-                                            <span class="d-block d-lg-none">Darkmode</span>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center gap-2 w-100 profileBox d-none"  id="lightmodeBtn">
-                                            <i class="bi bi-sun-fill fs-5" title="lightmode"></i>
-                                            <span class="d-block d-lg-none">lightmode</span>
-                                        </div>
-                                        <div class="profileBox w-100 d-flex justify-content-center align-items-center" data-bs-toggle="offcanvas" href="#profileOffcanvas">
-                                            <a role="button" class="text-dark">
-                                                <i class="bi bi-person-lines-fill fs-4 me-3" title="Profile" id="profile"></i>
-                                            </a>
-                                            <p class="m-0 d-block d-lg-none">Profile</p>
-                                        </div>
+                                <button class="btn btn-dark d-block d-lg-none" id="showSideBar">
+                                    <i class="bi bi-menu-app"></i>
+                                </button>
+                                <div class="d-flex gap-5">
+                                    <form class="mx-0 mx-lg-5 my-3 my-lg-0" role="search">
+                                        <i class="bi bi-moon-fill profileBox" title="darkmode" id="darkmodeBtn"></i>
+                                        <i class="bi bi-sun-fill profileBox d-none" title="lightmode" id="lightmodeBtn"></i>
+                                    </form>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="navBar">
+                                    <ul class="navbar-nav align-items-center gap-4 me-auto my-4 my-lg-0">
+                                    <li class="nav-item text-center rounded-3">
+                                        <a class="nav-link" aria-current="page" id="homeBtn">Home</a>
+                                    </li>
+                                    <li class="nav-item text-center rounded-3">
+                                        <a class="nav-link" data-bs-toggle="offcanvas" href="#aboutOffcanvas">About</a>
+                                    </li>
+                                    </ul>
+                                    <div class="profileBox w-100 d-flex justify-content-center justify-content-lg-end align-items-center mb-4 mb-lg-0" data-bs-toggle="offcanvas" href="#profileOffcanvas">
+                                        <a role="button" class="text-dark">
+                                            <i class="bi bi-person-lines-fill fs-4 me-3" title="Profile" id="profile"></i>
+                                        </a>
+                                        <p class="m-0 d-block d-lg-none">Profile</p>
                                     </div>
-                                </form>
-                              </div>
+                                </div>
                             </div>
                         </nav>
 

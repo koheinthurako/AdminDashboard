@@ -246,4 +246,30 @@ button {
   #invoiceBox table{
     font-size: 10px;
   }
+
+  #userBox .card {
+    height: 230px;
+  }
+
+  #userBox .card img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  #userBox .card .content h4{
+    font-size: 12px;
+    margin: 0;
+  }
+
+  #userBox .card .content p{
+    font-size: 9px;
+  }
+
+  #userBox .card .card-body button{
+    font-size: 10px;
+    padding: 2px 3px !important;
+  }
+
  }

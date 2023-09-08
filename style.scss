@@ -212,7 +212,7 @@ button {
     }
 
     #sidebar .btn-group-vertical:first-child {
-      margin-top: 0;
+      margin-top: 21px;
     }
 
     #invoiceBox .searchBox {
@@ -226,7 +226,7 @@ button {
   }
 
   #sidebar .btn-group-vertical:first-child {
-    margin-top: 0;
+    margin-top: 21px;
   }
 
   #aboutCard p {
@@ -270,6 +270,10 @@ button {
   #userBox .card .card-body button{
     font-size: 10px;
     padding: 2px 3px !important;
+  }
+
+  .navbar .navbar-toggler {
+    height: 43px;
   }
 
  }

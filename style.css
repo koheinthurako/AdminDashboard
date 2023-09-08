@@ -12032,7 +12032,7 @@ table tr td:last-child i {
     padding: 75px 15px 50px 15px;
   }
   #sidebar .btn-group-vertical:first-child {
-    margin-top: 0;
+    margin-top: 21px;
   }
   #invoiceBox .searchBox {
     width: 100%;
@@ -12043,7 +12043,7 @@ table tr td:last-child i {
     padding: 75px 15px 50px 15px;
   }
   #sidebar .btn-group-vertical:first-child {
-    margin-top: 0;
+    margin-top: 21px;
   }
   #aboutCard p {
     font-size: 12px;
@@ -12078,6 +12078,9 @@ table tr td:last-child i {
   #userBox .card .card-body button {
     font-size: 10px;
     padding: 2px 3px !important;
+  }
+  .navbar .navbar-toggler {
+    height: 43px;
   }
 }
 

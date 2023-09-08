@@ -12082,6 +12082,10 @@ table tr td:last-child i {
   .navbar .navbar-toggler {
     height: 43px;
   }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    width: 21px;
+    height: 21px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

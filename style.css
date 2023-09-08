@@ -12079,6 +12079,9 @@ table tr td:last-child i {
     font-size: 10px;
     padding: 2px 3px !important;
   }
+  .navbar {
+    padding: 1px;
+  }
   .navbar .navbar-toggler {
     height: 43px;
   }
